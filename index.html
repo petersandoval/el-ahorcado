@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO DEL AHORCADO</title>
+
+<marquee><img class="logo" src="ALURA2.png" width="3%" ><br> Alura Latan<br> Alumno: Pedro Sandoval.<br>Pais: El Salvador.</marquee>
+</head>
+<body>
+    <body class="fondo" background="teclado.jpg"></body>
+
+    <center>
+    
+<div class="main-container">
+
+<video autoplay controls src="fondo musical.mp4" width="20%"><br></video>
+ <h1>JUGUEMOS</h1>
+<H3>ADIVINA LA PALABRA OCULTA</H3>
+    <h1 id="msg-final"></h1>
+    <h3 id="acierto"></h3>
+    <div class="flex-row no-wrap">
+        <h2 class="palabra" id="palabra"></h2>
+        <picture>
+            <img src="img/ahorcado_6.png" alt="" id="image6">
+            <img src="img/ahorcado_5.png" alt="" id="image5">
+            <img src="img/ahorcado_4.png" alt="" id="image4">
+            <img src="img/ahorcado_3.png" alt="" id="image3">
+            <img src="img/ahorcado_2.png" alt="" id="image2">
+            <img src="img/ahorcado_1.png" alt="" id="image1">
+            <img src="img/ahorcado_0.png" alt="" id="image0">
+        </picture>
+    </div>
+    <div class="flex-row" id="turnos">
+        <div class="col">
+            <h3>Intentos restantes: <span id="intentos">6</span></h3>
+        </div>
+        
+<div class="flex-row">
+    <div class="col">
+        <div class="flex-row" id="abcdario"></div>
+        
+        <div class="col"></div>
+    </div>
+
+
+
+
+        
+        <div class="col">
+            <button onclick="inicio()" id="reset">Elegir otra palabra</button>
+            <button onclick="pista()" id="pista">Dame una pista!</button>
+            <br>
+            <span id="hueco-pista"></span>
+        </div>
+    </div>
+
+
+</div>
+<script src="ahorcado.js"></script>
+<link rel="stylesheet" href="estilo-ahoracado.css">
+<br>
+
+</center>
+</body>
+</html>
